@@ -1,0 +1,1374 @@
+html,body{
+    margin: 0;
+    padding: 0;
+    font-family: 'Montserrat', sans-serif;
+    overflow-x: hidden;
+}
+section{
+    display: block;
+}
+body{
+    overflow: hidden;
+}
+/* -----------------------------=============================Header Baslangic====================================------------------------------------------ */
+
+#mainDiv{
+    width: 100%;
+
+}
+
+#mainDiv #header{
+    position: sticky;
+    width: 100%;
+    height:100px;
+    background: #37517E;
+    overflow-y: hidden;
+}
+
+#mainDiv #header h1{
+    color: white;
+    display: inline-block;
+    font-size: 20px;
+    transform: translateX(100px) translateY(35px);
+}
+
+#mainDiv #header ul{
+    list-style: none;
+    display: flex;
+    justify-content: right;
+    margin-right: 300px;
+    margin-top: 25px;
+}
+
+#mainDiv #header ul li{
+    padding: 10px 20px;
+    transform: translateY(-25px);
+}
+
+#mainDiv #header ul li a{
+    list-style-type: none;
+    font-size: 16px;
+    text-decoration: none;
+    align-items: center;
+    justify-content: center;
+    color: white;
+}
+
+#mainDiv #header ul li a:hover{
+    color: #47B2E4;
+    transition: 0.3s;
+}
+
+#mainDiv #header ul button{
+    border-radius: 25px;
+    background: transparent;
+    transform: translateY(-25px) translateX(30px);
+    padding: 0px 40px;
+    border: #47B2E4 solid;
+}
+
+#mainDiv #header ul button p{
+    color: white;
+    font-size: 15px;
+}
+
+#mainDiv #header ul button:hover{
+    transition: 0.7s;
+    background-color: #47B2E4;
+    cursor: pointer;
+}
+/* -----------------------------=============================Header Bitis====================================------------------------------------------ 
+
+*//* -----------------------------=============================Home Baslangic====================================------------------------------------------ */
+#mainDiv #home{
+    width: 100%;
+    height: 600px;
+    background: #37517E;
+    overflow: hidden;
+}
+
+#mainDiv #home #text{
+    font-size:50px;
+    font-weight: bolder;
+    display: inline-block;
+    color: white;
+    transform: translateX(200px) translateY(150px);
+}
+
+#mainDiv #home #text p{
+    font-size:20px;
+    font-weight: bolder;
+    display: inline-block;
+    color: #AFB9CB;
+}
+#mainDiv #home #btn1{
+    border-radius: 20px;
+    transform: translateX(-443px) translateY(250px);
+    background-color: #47B2E4;
+    padding: 5px 20px;
+    font-size: 18px;
+    color: white;
+    letter-spacing: 1px;
+    border: none;
+}
+
+#mainDiv #home button a{
+    text-decoration: none;
+    color: white;
+    font-family: 'Open Sans', sans-serif;
+}
+
+#mainDiv #home #btn1:hover{
+    background-color: #209DD8;
+    cursor: pointer;
+    transition: 0.5s;
+}
+
+#mainDiv #home #btn2{
+    transform: translateX(350px) translateY(210px);
+    border-radius: 20px;
+    padding: 10px 30px;
+    font-size: 18px;
+    display: flex;
+    align-items: center;
+    background: transparent;
+    border: none;
+    color: white;
+}
+
+#mainDiv #home #btn2:hover i{
+    color: #47B2E4;
+    transition: 0.3s;
+}
+#mainDiv #home #img{
+    transform: translateX(900px)translateY(-200px);
+}
+img.vert-move {
+    -webkit-animation: mover 1s infinite  alternate;
+    animation: mover 1s infinite  alternate;
+}
+img.vert-move {
+    -webkit-animation: mover 1s infinite  alternate;
+    animation: mover 1s infinite  alternate;
+}
+@-webkit-keyframes mover {
+    0% { transform: translateY(0); }
+    100% { transform: translateY(-5px); }
+}
+@keyframes mover {
+    0% { transform: translateY(0); }
+    100% { transform: translateY(-5px); }
+}
+/* -----------------------------=============================Home Bitis====================================------------------------------------------ */
+
+/* -----------------------------=============================Clients Baslangic====================================------------------------------------------ */
+
+#mainDiv #clients{
+    width: 100%;
+    display: flex;
+    align-items: center;
+}
+
+#mainDiv #clients #footer{
+    overflow-y: hidden;
+    top: 0px;
+    position: relative;
+    width: 100%;
+    height: 12vh;
+    background: #F3F5FA;
+    display: flex;
+    justify-content: center;
+}
+
+#mainDiv #clients img{
+    margin: 50px;
+    filter: brightness(0);
+}
+
+#mainDiv #clients img{
+    -webkit-filter: grayscale(100%); /* Safari 6.0 - 9.0 */
+    filter: grayscale(100%);
+    opacity: 1;
+    transition: 0.3s;
+}
+
+#mainDiv #clients img:hover{
+    -webkit-filter: grayscale(0%); /* Safari 6.0 - 9.0 */
+    filter: grayscale(0%);
+    transform: scale(1.2);
+}
+/* -----------------------------=============================Clients Bitis====================================------------------------------------------ */
+
+/* -----------------------------=============================About us Baslangic====================================------------------------------------------ */
+#mainDiv #about .container_about{
+    position: absolute;
+    overflow-y: hidden;
+    margin-bottom: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: calc(400px - (65px + 65px));
+    background: white;
+}
+
+.container_about h2{
+    margin-top: 40px;
+    font-size: 40px;
+    text-transform: uppercase;
+    text-transform: uppercase;
+    text-align: center;
+    font-weight: bolder;
+    color: #37517e;
+  }
+.container_about h2:after{
+    content: "";
+    transform: translateY(240px);
+    position: absolute;
+    display: block;
+    width: 40px;
+    height: 3px;
+    background: #47b2e4;
+    bottom: 275px;
+    left: calc(50% - 20px);
+    z-index: 1;
+  }
+.container_about h2:before{
+    content: "";
+    position: absolute;
+    transform: translateY(240px);
+    display: block;
+    width: 120px;
+    height: 1px;
+    background: #ddd;
+    bottom: 276px;
+    left: calc(50% - 60px);
+  }
+.about_text{
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    margin-top: 90px;
+    color: #444444;
+}
+.text1{
+    width: 550px;
+    transform: translateX(400px);
+}
+.text2{
+    width: 550px;
+    transform: translateX(400px);
+}
+.fa-check-double{
+    color: #47b2e4;
+}
+
+.learn_button{
+    background: transparent;
+    font-size: 16px;
+    color: #48b2e3;
+    text-decoration: none;
+    padding: 10px 35px;
+    border-radius: 5px;
+    font-weight: 500;
+    transition: 0.5s;
+    border: 2px solid #48b2e3;
+    transition: 0.3s;
+}
+.learn_button:hover{
+    background: #48b2e3;
+    color: white;
+}
+/* -----------------------------=============================About us bitis====================================------------------------------------- */
+
+/* -----------------------------=============================Texts2 Baslangic====================================----------------------------------- */
+#mainDiv .texts2{
+    width: 100%;
+    height: 500px;
+    background-color: #F3F5FA;
+    margin-top: 300px;
+    padding-top: 200px;
+}
+
+#mainDiv .texts2 p{
+    color: #37517E;
+    font-size: 32px;
+    margin-left: 100px;
+    letter-spacing: -1px;
+}
+
+#mainDiv .texts2 p b{
+    font-weight: bolder;
+}
+
+#mainDiv .texts2 i{
+    color: #AFB9CB;
+    line-height: 25px;
+    margin-left: 100px;
+}
+
+#mainDiv .texts2 i strong{
+    color: #AFB9CB;
+    line-height: 5px;
+    font-size: 16px;
+    margin-left: 100px;
+}
+
+#mainDiv .texts2 .img img{
+    margin:-500px 0px 0px 1200px;
+}
+
+#mainDiv .texts2 .txts1 #txts2{
+    display: flex;
+    align-items: center;
+    padding-left: 20px;
+    color:#47B2E4;
+    font-weight: bolder;
+    font-size: 20px;
+    width: 700px;
+    margin:20px 0px 0px 100px;
+    height: 70px;
+    background: white;
+}
+
+#mainDiv .texts2 .txts1 #txts2 i{
+    margin-left: 630px;
+}
+
+#mainDiv .texts2 .txts1 #txts2 a{
+    padding-top: 50px;
+    font-size: 15px;
+    color: #AFB9CB;
+}
+/* ----------------------------===================================Texts 2=======================================---------------------------------- */
+
+/* -------------------------------===================================Skills Baslangic===========================---------------------------------- */
+#mainDiv #progress{
+    width: 100%;
+    height: 500px;
+    display: flex;
+    align-items: center;
+}
+
+#mainDiv #progress #img{
+    margin-left: 200px;
+}
+
+#mainDiv #progress #skills{
+    width: 800px;
+    height: 400px;
+}
+
+#mainDiv #progress #skills p{
+    font-size: 32px;
+    color: #37517E;
+    font-weight: bolder;
+    margin-left: 100px;
+}
+
+#mainDiv #progress #skills em{
+    margin-left: 100px;
+    font-style: italic;
+}
+
+#mainDiv #progress #skills i{
+    margin-left: 100px;
+}
+
+#skill_bar{
+    margin-top: 30px;
+    margin-left: 100px;
+}
+
+::selection{
+color: #fff;
+background: #6665ee;
+}
+.skill-bars{
+padding: 25px 30px;
+width: 600px;
+background: #fff;
+box-shadow: 5px 5px 20px rgba(0,0,0,0.2);
+border-radius: 10px;
+}
+.skill-bars .bar{
+margin: 20px 0;
+}
+.skill-bars .bar:first-child{
+margin-top: 0px;
+}
+.skill-bars .bar .info{
+margin-bottom: 5px;
+}
+.skill-bars .bar .info span{
+font-weight: 500;
+font-size: 17px;
+opacity: 0;
+animation: showText 0.5s 1s linear forwards;
+}
+@keyframes showText {
+100%{
+  opacity: 1;
+}
+}
+.skill-bars .bar .progress-line{
+height: 10px;
+width: 100%;
+background: #f0f0f0;
+position: relative;
+transform: scaleX(0);
+transform-origin: left;
+border-radius: 10px;
+box-shadow: inset 0 1px 1px rgba(0,0,0,0.05),
+            0 1px rgba(255,255,255,0.8);
+animation: animate 1s cubic-bezier(1,0,0.5,1) forwards;
+}
+@keyframes animate {
+100%{
+  transform: scaleX(1);
+}
+}
+.bar .progress-line span{
+height: 100%;
+position: absolute;
+border-radius: 10px;
+transform: scaleX(0);
+transform-origin: left;
+background: #6665ee;
+animation: animate 1s 1s cubic-bezier(1,0,0.5,1) forwards;
+}
+.bar .progress-line.html span{
+width: 90%;
+}
+.bar .progress-line.css span{
+width: 60%;
+}
+.bar .progress-line.jquery span{
+width: 85%;
+}
+.bar .progress-line.python span{
+width: 50%;
+}
+.bar .progress-line.mysql span{
+width: 75%;
+}
+.progress-line span::before{
+position: absolute;
+content: "";
+top: -10px;
+right: 0;
+height: 0;
+width: 0;
+border: 7px solid transparent;
+border-bottom-width: 0px;
+border-right-width: 0px;
+border-top-color: #000;
+opacity: 0;
+animation: showText2 0.5s 1.5s linear forwards;
+}
+.progress-line span::after{
+position: absolute;
+top: -28px;
+right: 0;
+font-weight: 500;
+background: #000;
+color: #fff;
+padding: 1px 8px;
+font-size: 12px;
+border-radius: 3px;
+opacity: 0;
+animation: showText2 0.5s 1.5s linear forwards;
+}
+@keyframes showText2 {
+100%{
+  opacity: 1;
+}
+}
+.progress-line.html span::after{
+content: "90%";
+}
+.progress-line.css span::after{
+content: "60%";
+}
+.progress-line.jquery span::after{
+content: "85%";
+}
+.progress-line.python span::after{
+content: "50%";
+}
+.progress-line.mysql span::after{
+content: "75%";
+}
+
+/* -----------------------------------------===========================skills Bitis==============================-------------------------------------- */
+
+/* -------------------------------====================================Services Baslangic=================================------------------------------------- */
+#mainDiv #services{
+    width: 100%;
+    height: 550px;
+    background: #F3F5FA;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+
+#mainDiv #services #h1 h1{
+    position: relative;
+    text-transform: uppercase;
+    margin-top: 60px;
+    font-size: 32px;
+    font-weight: bolder;
+    color: #37517E;
+    text-align: center;
+}
+
+#mainDiv #services #h1 h1::after{
+    content: "";
+    transform: translateY(290px);
+    position: absolute;
+    display: block;
+    width: 40px;
+    height: 3px;
+    background: #47b2e4;
+    bottom: 275px;
+    left: calc(50% - 20px);
+    z-index: 1;
+}
+
+#mainDiv #services #h1 h1::before{
+    content: "";
+    position: absolute;
+    transform: translateY(290px);
+    display: block;
+    width: 120px;
+    height: 1px;
+    background: #ddd;
+    bottom: 276px;
+    left: calc(50% - 60px);
+}
+
+#mainDiv #services #i i{
+    position: absolute;
+    transform: translateX(-500px) translateY(120px);
+}
+
+/* ----------------------------------------=============================qutular Baslangic=============================---------------------------------------- */
+
+#mainDiv #services #box1{
+    position: absolute;
+    width: 300px;
+    height: 250px;
+    text-align: left;
+    padding-left: 20px;
+    margin: 200px 1200px 0px 0px;
+    background-color: white;
+    box-shadow: 0 3px 3px rgba(0,0,0,0.4);
+    transition: ease-in-out 0.5s;
+}
+
+#mainDiv #services #box2{
+    position: absolute;
+    width: 300px;
+    height: 250px;
+    text-align: left;
+    padding-left: 20px;
+    margin: 200px 400px 0px 0px;
+    background-color: white;
+    box-shadow: 0 3px 3px rgba(0,0,0,0.4);
+    transition: ease-in-out 0.5s;
+}
+
+#mainDiv #services #box3{
+    position: absolute;
+    width: 300px;
+    height: 250px;
+    text-align: left;
+    padding-left: 20px;
+    margin: 200px -400px 0px 0px;
+    background-color: white;
+    box-shadow: 0 3px 3px rgba(0,0,0,0.4);
+    transition: ease-in-out 0.5s;
+}
+
+#mainDiv #services #box4{
+    position: absolute;
+    width: 300px;
+    height: 250px;
+    text-align: left;
+    padding-left: 20px;
+    margin: 200px -1200px 0px 0px;
+    background-color: white;
+    box-shadow: 0 3px 3px rgba(0,0,0,0.4);
+    transition: ease-in-out 0.5s;
+}
+
+#mainDiv #services #box1:hover,#box2:hover,#box3:hover,#box4:hover{
+    cursor: pointer;
+    transform: translateY(-10px);
+    transition: 0.7s;
+}
+/* ----------------------------------------=============================qutular Bitis=============================---------------------------------------- */
+
+/* ----------------------------------------=============================qutularin ici Baslangic=============================---------------------------------------- */
+
+#mainDiv #services #box1 i{
+    font-size: 40px;
+    margin-bottom: 15px;
+    color: #209DD8;
+    padding: 40px 200px 0px 0px ;
+
+}
+
+#mainDiv #services #box1 p{
+    font-size: 25px;
+    font-weight: bolder;
+    margin-bottom: 15px;
+    color: #37517E;
+    margin-right: 60px;
+}
+
+#mainDiv #services #box1 strong{
+    text-align: left;
+    color: #AFB9CB;
+    margin-bottom: 10px;
+    font-size: 16px;
+    line-height: 20px;
+}
+
+#mainDiv #services #box2 i{
+    font-size: 30px;
+    color: #209DD8;
+    margin-bottom: 15px;
+    padding: 50px 200px 0px 0px ;
+}
+#mainDiv #services #box2 p{
+    font-size: 25px;
+    font-weight: bolder;
+    margin-bottom: 15px;
+    color: #37517E;
+    margin-right: 60px;
+}
+
+#mainDiv #services #box2 strong{
+    text-align: left;
+    color: #AFB9CB;
+    margin-bottom: 15px;
+    font-size: 16px;
+    line-height: 20px;
+}
+
+#mainDiv #services #box3 i{
+    font-size: 30px;
+    color: #209DD8;
+    margin-bottom: 15px;
+    padding: 50px 200px 0px 0px ;
+}
+
+#mainDiv #services #box3 p{
+    font-size: 25px;
+    font-weight: bolder;
+    margin-bottom: 15px;
+    color: #37517E;
+    margin-right: 60px;
+}
+
+#mainDiv #services #box3 strong{
+    text-align: left;
+    color: #AFB9CB;
+    margin-bottom: 15px;
+    font-size: 16px;
+    line-height: 20px;
+}
+#mainDiv #services #box4 i{
+    font-size: 30px;
+    color: #209DD8;
+    margin-bottom: 15px;
+    padding: 50px 200px 0px 0px ;
+}
+
+#mainDiv #services #box4 p{
+    font-size: 25px;
+    font-weight: bolder;
+    margin-bottom: 15px;
+    color: #37517E;
+    margin-right: 60px;
+}
+
+#mainDiv #services #box4 strong{
+    text-align: left;
+    color: #AFB9CB;
+    margin-bottom: 15px;
+    font-size: 16px;
+    line-height: 20px;
+}
+/* ----------------------------------------=============================qutularin ici Bitis=============================---------------------------------------- */
+
+/* ----------------------------------------=============================qutular Bitis=============================---------------------------------------- */
+
+/* ----------------------------------------=============================Parallax Img Baslangic=============================---------------------------------------- */
+#mainDiv #action{
+    /* display: flex;
+    justify-content: center; */
+    width: 100%;
+    height: 350px;
+    background-image: url("../imgs/cta-bg.jpg");  
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+#mainDiv #action #cover{
+    width: 100%;
+    height: 190px;
+    background-color: rgba( 40, 58, 90, 0.9);
+    padding: 140px 0px 20px 300px;
+    
+}
+
+#mainDiv #action #cover #action_text{
+    height: 200px;
+}
+
+#mainDiv #action #cover #action_text h1{
+    font-size: 32px;
+    color: white;
+    font-weight: bolder;
+}
+
+#mainDiv #action #cover #action_text p{
+    color: #AFB9CB;
+    line-height: 20px;
+}
+
+#mainDiv #action #cover #action_text button{
+    color: white;
+    font-size: 16px;
+    background: transparent;
+    font-family: "Jost", sans-serif;
+    padding: 12px 40px;
+    letter-spacing: 1px;
+    border: 2px solid white;
+    border-radius: 30px;
+    transform: translateX(1080px) translateY(-60px);
+}
+
+#mainDiv #action #cover #action_text button:hover{
+    background: #47B2E4;
+    border: 2px #47B2E4 solid;
+    transition: 0.5s;
+    cursor: pointer;
+    
+}
+/* ----------------------------------------=============================Parallax Img Bitis=============================---------------------------------------- */
+/* ----------------------------------------=============================Portfolio Baslangic=============================---------------------------------------- */
+
+#mainDiv #portfolio{
+    width: 100%;
+    height: 1450px;
+}
+
+#mainDiv #portfolio #images{
+    margin-left: 250px;
+    margin-top: 40px;
+    width: 1400px;
+    height: 1400px;
+
+}
+
+#mainDiv #portfolio #p_text h1{
+    font-size: 32px;
+    margin-top: 20px;
+    font-weight: bold;
+    color: #37517E;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+#mainDiv #portfolio #p_text p{
+    font-size: 16px;
+    margin-top: 20px;
+    color: #5F6060;
+    text-align: center;
+}
+
+#mainDiv #portfolio #images img{
+    margin: 7px;
+}
+
+#mainDiv #portfolio #images #img2{
+    transform: translateY(-135px);
+}
+
+#mainDiv #portfolio #images #img3{
+    transform: translateY(-200px);
+}
+
+#mainDiv #portfolio #images #img5{
+    transform: translateY(-135px) translateX(5px);
+}
+
+#mainDiv #portfolio #images #img6{
+    transform: translateX(-870px)
+}
+#mainDiv #portfolio #images #img4{
+    transform: translateX(875px) translateY(-540px);
+}
+
+#mainDiv #portfolio #images #img7{
+    transform: translateX(875px) translateY(-540px);
+}
+
+#mainDiv #portfolio #images #img8{
+    transform: translateX(440px) translateY(-240px);
+}
+
+#mainDiv #portfolio #images #img9{
+    transform: translateX(-430px) translateY(-130px);
+}
+/* ----------------------------------------=============================Portfolio Bitis=============================---------------------------------------- */
+/* ----------------------------------------=============================Team Baslangic=============================---------------------------------------- */
+#mainDiv #team{
+    width: 100%;
+    height: 650px;
+    background: #F3F5FA;
+}
+
+#mainDiv #team #t_text{
+    width: 100%;
+    height: 200px;
+}
+
+#mainDiv #team #t_text h1{
+    font-size: 32px;
+    padding-top: 40px;
+    font-weight: bold;
+    color: #37517E;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+#mainDiv #team #t_text p{
+    font-size: 16px;
+    margin-top: 20px;
+    color: #5F6060;
+    text-align: center;
+}
+
+#mainDiv #team #box1{
+    margin-left: 200px;
+    width: 700px;
+    height: 180px;
+    border-radius: 3px;
+    background-color: white;
+    transition: ease-in-out 0.5s;
+}
+#mainDiv #team #box1:hover{
+    transform: translateY(-10px);
+    transition: 0.7s;
+    cursor: pointer;
+}
+
+#mainDiv #team #box2{
+    margin-top: 40px;
+    margin-left: 200px;
+    width: 700px;
+    height: 180px;
+    border-radius: 3px;
+    background-color: white;
+    transition: ease-in-out 0.5s;
+}
+
+#mainDiv #team #box3{
+    margin-top: -400px;
+    margin-left: 1000px;
+    width: 700px;
+    height: 180px;
+    border-radius: 3px;
+    background-color: white;
+    transition: ease-in-out 0.5s;
+}
+#mainDiv #team #box4{
+    margin-top: 40px;
+    margin-left: 1000px;
+    width: 700px;
+    border-radius: 3px;
+    height: 180px;
+    background-color: white;
+    transition: ease-in-out 0.5s;
+}
+
+#mainDiv #team #box1,#box2,#box3,#box4{
+    box-shadow: 0 3px 3px rgba(0,0,0,0.2);
+}
+
+#mainDiv #team #box1 #circle_img_1{
+    width: 120px;
+    display: flex;
+    justify-content: center;
+    height: 120px;
+    border-radius: 50%;
+    background-image: url(/imgs/ww.png);
+    border-image-slice: 50%;
+}
+/* ----------------------------------------=============================Team Bitis=============================---------------------------------------- */
+
+/* ----------------------------------------=============================Pricing Baslangic=============================---------------------------------------- */
+#mainDiv #pricing{
+    width: 100%;
+    height: 900px;
+    margin-top: 60px;
+    display: flex;
+    text-align: center;
+}
+
+#mainDiv #pricing #pricing_text {
+    width: 100%;
+    height: 50px;
+    font-size: 32px;
+    font-weight: bold;
+    color: #37517E;
+    margin-top: 20px;
+    text-transform: uppercase;
+    transform: translateX(300px);
+}
+
+#mainDiv #pricing #box__3{
+    width: 900px;
+    height: 700px;
+    transform: translateX(-1000px) translateY(150px);
+}
+
+#mainDiv #pricing #box__3 #box_1{
+    width: 400px;
+    border-top: 5px solid #209DD8;
+    height: 600px;
+    transition: ease-in-out 0.5s;
+    box-shadow: 0 3px 3px rgba(0,0,0,0.3);
+    background: white;
+    border-radius: 10px;
+}
+
+#mainDiv #pricing #box__3 #box_1 p{
+    font-size: 20px;
+    font-weight: bold;
+    color: #37517E;
+    padding: 80px 230px 0px 0px;
+    box-sizing: border-box;
+}
+
+#mainDiv #pricing #box__3 #box_1 i{
+    font-size: 50px;
+    font-weight: light;
+    color:#37517E;
+    padding-right: 275px;
+}
+#mainDiv #pricing #box__3 #box_2{
+    width: 400px;
+    border-top: 5px solid #209DD8;
+    box-shadow: 0 3px 3px rgba(0,0,0,0.3);
+    height: 600px;
+    transform: translateX(500px) translateY(-600px);
+    background: white;
+    transition: ease-in-out 0.5s;
+    border-radius: 10px;
+}
+
+#mainDiv #pricing #box__3 #box_2 p{
+    font-size: 20px;
+    font-weight: bold;
+    color: #37517E;
+    padding: 80px 200px 0px 0px;
+    box-sizing: border-box;
+}
+
+#mainDiv #pricing #box__3 #box_2 i{
+    font-size: 50px;
+    font-weight: light;
+    color:#37517E;
+    padding-right: 275px;
+
+}
+#mainDiv #pricing #box__3 #box_3{
+    width: 400px;
+    border-top: 5px solid #209DD8;
+    transform: translateX(1000px) translateY(-1200px);
+    height: 600px;
+    box-shadow: 0 3px 3px rgba(0,0,0,0.3);
+    background: white;
+    transition: ease-in-out 0.5s;
+    border-radius: 10px;
+}
+
+
+#mainDiv #pricing #box__3 #box_3 p{
+    font-size: 20px;
+    font-weight: bold;
+    color: #37517E;
+    padding: 80px 210px 0px 0px;
+    box-sizing: border-box;
+}
+
+#mainDiv #pricing #box__3 #box_3 i{
+    font-size: 50px;
+    font-weight: light;
+    color:#37517E;
+    padding-right: 275px;
+}
+
+#mainDiv #pricing #box__3 #box_1:hover{
+    transform: translateY(-10px);
+}
+#mainDiv #pricing #box__3 #box_2:hover{
+    transform: translateX(500px) translateY(-610px);
+}
+#mainDiv #pricing #box__3 #box_3:hover{
+    transform: translateX(1000px) translateY(-1210px);
+}
+
+/* ----------------------------------------=============================Pricing Bitis=============================---------------------------------------- */
+
+/* ----------------------------------------=============================FAQ Baslangic=============================---------------------------------------- */
+#mainDiv #FAQ{
+    width: 100%;
+    height: 700px;
+    text-align: center;
+    background: #F3F5FA;
+}
+
+#mainDiv #FAQ p{
+    text-align: center;
+    font-size: 32px;
+    color: #37517E;
+    text-transform: uppercase;
+    font-weight: bold;
+    padding-top: 40px;
+    padding-bottom: 20px;
+}
+
+#mainDiv #FAQ i{
+    text-align: center;
+    font-size: 16px;
+    color: #444444;
+}
+
+#mainDiv #FAQ #faqs #faq1 {
+    width: 900px;
+    height: 80px;
+    background: white;
+    box-shadow: 0 3px 3px rgba(0,0,0,0.3);
+    margin: 50px 0px 0px 500px;
+    border-radius: 10px;
+    font-weight: bold;
+    transition: ease-in-out 0.5s;
+    display: flex;
+    align-items: center;
+}
+#mainDiv #FAQ #faqs #faq1 i{
+    font-size: 40px;
+    margin: 4px;
+    color: #209DD8;
+}
+#mainDiv #FAQ #faqs #faq1 b{
+    font-size: 16px;
+    color:#444;
+    margin-left: 10px;
+}
+
+#mainDiv #FAQ #faqs #faq1 i:last-child{
+    font-size: 20px;
+    color: #5F6060;
+    padding-left: 430px;
+}
+
+#mainDiv #FAQ #faqs #faq1:hover{
+    transform: translateY(-3px);
+    cursor: pointer;
+    color: #209DD8;
+    transition: 0.5s;
+}
+
+#mainDiv #FAQ #faqs #faq1 b:hover{
+    color: #209DD8;
+    transition: 0.5s;
+}
+#mainDiv #FAQ #faqs #faq2 {
+    width: 900px;
+    box-shadow: 0 3px 3px rgba(0,0,0,0.3);
+    height: 80px;
+    background: white;
+    margin: 50px 0px 0px 500px;
+    border-radius: 10px;
+    font-weight: bold;
+    transition: ease-in-out 0.5s;
+    display: flex;
+    align-items: center;
+}
+
+#mainDiv #FAQ #faqs #faq2 i{
+    font-size: 40px;
+    margin: 4px;
+    color: #209DD8;
+}
+#mainDiv #FAQ #faqs #faq2 b{
+    font-size: 16px;
+    color:#444;
+    margin-left: 10px;
+}
+
+#mainDiv #FAQ #faqs #faq2 i:last-child{
+    font-size: 20px;
+    color: #5F6060;
+    padding-left: 430px;
+}
+
+#mainDiv #FAQ #faqs #faq2:hover{
+    transform: translateY(-3px);
+    cursor: pointer;
+    color: #209DD8;
+    transition: 0.5s;
+}
+
+#mainDiv #FAQ #faqs #faq2 b:hover{
+    color: #209DD8;
+    transition: 0.5s;
+}
+#mainDiv #FAQ #faqs #faq3 {
+    width: 900px;
+    height: 80px;
+    background: white;
+    box-shadow: 0 3px 3px rgba(0,0,0,0.3);
+    margin: 50px 0px 0px 500px;
+    border-radius: 10px;
+    font-weight: bold;
+    transition: ease-in-out 0.5s;
+    display: flex;
+    align-items: center;
+}
+
+#mainDiv #FAQ #faqs #faq3 i{
+    font-size: 40px;
+    margin: 4px;
+    color: #209DD8;
+}
+#mainDiv #FAQ #faqs #faq3 b{
+    font-size: 16px;
+    color:#444;
+    margin-left: 10px;
+}
+
+#mainDiv #FAQ #faqs #faq3 i:last-child{
+    font-size: 20px;
+    color: #5F6060;
+    padding-left: 430px;
+}
+
+#mainDiv #FAQ #faqs #faq3:hover{
+    transform: translateY(-3px);
+    cursor: pointer;
+    color: #209DD8;
+    transition: 0.5s;
+}
+
+#mainDiv #FAQ #faqs #faq3 b:hover{
+    color: #209DD8;
+    transition: 0.5s;
+}
+
+#mainDiv #FAQ #faqs #faq4 {
+    width: 900px;
+    height: 80px;
+    box-shadow: 0 3px 3px rgba(0,0,0,0.3);
+    background: white;
+    margin: 50px 0px 0px 500px;
+    border-radius: 10px;
+    font-weight: bold;
+    transition: ease-in-out 0.5s;
+    display: flex;
+    align-items: center;
+}
+
+#mainDiv #FAQ #faqs #faq4 i{
+    font-size: 40px;
+    margin: 4px;
+    color: #209DD8;
+}
+#mainDiv #FAQ #faqs #faq4 b{
+    font-size: 16px;
+    color:#444;
+    margin-left: 10px;
+}
+
+#mainDiv #FAQ #faqs #faq4 i:last-child{
+    font-size: 20px;
+    color: #5F6060;
+    padding-left: 430px;
+}
+
+#mainDiv #FAQ #faqs #faq4:hover{
+    transform: translateY(-3px);
+    cursor: pointer;
+    color: #209DD8;
+    transition: 0.5s;
+}
+
+#mainDiv #FAQ #faqs #faq4 b:hover{
+    color: #209DD8;
+    transition: 0.5s;
+}
+/* ----------------------------------------=============================FAQ Baslangic=============================---------------------------------------- */
+
+/* ----------------------------------------=============================Contact Baslangic=============================---------------------------------------- */
+#mainDiv #contact{
+    width: 100%;
+    height: 900px;
+    text-align: center;
+}
+
+#mainDiv #contact p{
+    font-size: 32px;
+    font-weight: bold;
+    text-align: center;
+    text-transform: uppercase;
+    color: #37517e;
+    padding-top: 60px;
+}
+
+#mainDiv #contact h1{
+    line-height: 20px;
+    padding-top: 20px;
+    padding-bottom: -20px;
+}
+
+#mainDiv #contact #col_1{
+    width: 500px;
+    text-align: left;
+    height: 600px;
+    background: white;
+    box-shadow: 0 3px 3px rgba(0,0,0,0.3);
+    margin: 150px 0px 0px 300px;
+    border-top: 4px solid #209DD8;
+    border-bottom: 4px solid #209DD8;
+}
+
+#mainDiv #contact #col_1 p{
+    font-size: 20px;
+    color: #37517E;
+    padding: 30px 300px 0px 0px;
+}
+#mainDiv #contact #col_1 b{
+    font-size: 20px;
+    color: #37517E;
+    font-weight: bold;
+    padding-left: 35px;
+    line-height: 50px;
+}
+
+#mainDiv #contact #col_1 strong{
+    padding-left: 35px;
+    padding-top: 50px;
+}
+
+#mainDiv #contact #col_1 a{
+    font-size: 20px;
+    color: #37517E;
+    font-weight: bold;
+    padding-left: 35px;
+
+}
+
+#mainDiv #contact #col_2{
+    width: 800px;
+    text-align: left;
+    height: 600px;
+    background-color: white;
+    transform: translateX(900px) translateY(-608px);
+    border-top: 4px solid #209DD8;
+    box-shadow: 0 3px 3px rgba(0,0,0,0.3);
+    border-bottom: 4px solid #209DD8;
+}
+
+#mainDiv #contact #col_2 #inp1{
+    width: 200px;
+    height: 25px;
+    margin: 100px;
+    border: none;
+    box-shadow: 0 3px 3px rgba(0,0,0,0.3);
+    border-radius: 6px;
+}
+#mainDiv #contact #col_2 #inp2{
+    width: 200px;
+    height: 25px;
+    border: none;
+    box-shadow: 0 3px 3px rgba(0,0,0,0.3);
+    transform: translateY(-230px) translateX(400px);
+    margin: 100px;
+    border-radius: 6px;
+}
+#mainDiv #contact #col_2 #inp3{
+    width: 600px;
+    height: 25px;
+    border: none;
+    box-shadow: 0 3px 3px rgba(0,0,0,0.3);
+    transform: translateY(-300px) translateX(100px);
+    border-radius: 6px;
+}
+#mainDiv #contact #col_2 #inp4{
+    width: 600px;
+    height: 300px;
+    transform: translateY(-365px);
+    margin: 100px;
+    box-shadow: 0 3px 3px rgba(0,0,0,0.3);
+    border: none;
+    border-radius: 6px;
+}
+/* ----------------------------------------=============================Contact Bitis=============================---------------------------------------- */
+
+/* ----------------------------------------=============================Join Baslangic=============================---------------------------------------- */
+#mainDiv #join{
+    width: 100%;
+    height: 300px;
+    margin-top: 50px;
+    text-align: center;
+    background: #F3F5FA;   
+}
+#mainDiv #join p{
+    font-size: 32px;
+    color: #37517E;
+    text-align: center;
+    padding-top: 40px;
+}
+
+#mainDiv #join i{
+    font-size: 16px;
+    color: #444;
+    line-height: 100px;
+
+}
+
+#mainDiv #join input{
+    width: 700px;
+    height: 30px;
+    margin-top: 0px;
+    display: inline-block;
+    padding: 10px 40px;
+    border: none;
+    border-radius: 30px;
+    background: white;
+    box-shadow: 0 3px 3px rgba(0,0,0,0.3);
+}
+#mainDiv #join button{
+    background: #47B2E4;
+    padding: 18px 48px;
+    color: white;
+    font-size: 16px;
+    transform: translateX(-188px);
+    letter-spacing: 2px;
+    border: none;
+    border-radius: 30px;
+}
+
+#mainDiv #join button:hover{
+    transition: 0.5s;
+    background: #209DD8;
+    cursor: pointer;
+}
